@@ -1,0 +1,229 @@
+* {
+    box-sizing: border-box;
+    user-select: none;
+    overflow: auto;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* ===========================_Page action container_ ===========================*/
+.page-actions-cont {
+    height: 3rem;
+    background-color: #16a085;
+    display: flex;
+    align-items: flex-end;
+}
+
+.page-action {
+    width: 3.5rem;
+    height: 2rem;
+    text-align: center;
+    color: #f1f2f6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* ===========================_Cell properties action container_ ===========================*/
+.cellprops-actions-cont {
+    height: 3rem;
+    background-color: #ecf0f1;
+    display: flex;
+    align-items: center;
+}
+
+.cellprops-actions-cont>* {
+    margin: 0.5rem;
+    display: inline-block;
+}
+
+.cellprops-actions-cont>select {
+    border: none;
+    outline: none;
+}
+
+.font-family-prop {
+    padding: 0.2rem;
+}
+
+.font-size-prop {
+    padding: 0.2rem;
+}
+
+.color-prop {
+    position: relative;
+}
+
+.color-prop>input {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+/* ===========================_formula action container_ ===========================*/
+.formula-actions-cont {
+    height: 2rem;
+    background-color: #ecf0f1;
+    padding-left: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.formula-actions-cont>* {
+    display: inline-block;
+    margin-right: 0.7rem;
+}
+
+.formula-icon {
+    width: 1.2rem;
+}
+
+.address-bar {
+    width: 5rem;
+    text-align: center;
+}
+
+.formula-bar {
+    width: calc(100vw - 5rem - 0.7rem - 0.7rem - 0.7rem);
+}
+
+.formula-actions-cont>input {
+    border: none;
+    outline: none;
+    height: 70%;
+}
+
+/* ===========================_grid action container_ ===========================*/
+.grid-actions-cont {
+    height: calc(100vh - 3rem - 3rem - 2rem - 3rem);
+    position: relative;
+    overflow: scroll;
+    background-color: #ecf0f1;
+}
+.grid-actions-cont::-webkit-scrollbar-thumb {
+        background-color: #7f8fa6;
+    border: 4px solid transparent;
+    border-radius: 8px;
+    background-clip: padding-box;
+    outline: 1px solid #7f8fa6 !important;
+}
+.grid-actions-cont::-webkit-scrollbar {
+    width: 16px;
+    border: 1px solid #afbac7;
+}
+
+.top-left-dummy-box {
+    height: 2rem;
+    width: 2.1rem;
+    background-color: #747d8c;
+    position: fixed;
+    z-index: 1;
+}
+
+.address-col-cont {
+    position: sticky;
+    top: 2rem;
+    left: 0;
+}
+
+.address-row-cont {
+    display: flex;
+    position: sticky;
+    top: 0;
+    left: 2rem;
+}
+
+.cells-cont {
+    position: absolute;
+    top: 0;
+    left: 2rem;
+    border: 1px solid #afbac7;
+}
+
+.address-col {
+    height: 2rem;
+    width: 2.1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #91a0b1;
+}
+
+.address-row {
+    height: 2rem;
+    width: 7rem;
+    border: 1px solid #91a0b1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.row-cont {
+    display: flex;
+}
+
+.cell {
+    height: 2rem;
+    width: 7rem;
+    outline: none;
+    border: 1px solid #afbac7;
+}
+
+
+
+/* ===========================_sheet action container_ ===========================*/
+.sheet-actions-cont {
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    gap: 1rem;
+    background-color: #ecf0f1;
+}
+
+.sheet-actions-cont>* {
+    display: inline-block;
+}
+
+.sheet-add-icon {
+    width: 2vw;
+}
+
+.sheet-add-icon:hover {
+    cursor: default;
+}
+
+.sheets-folder-cont {
+    display: flex;
+    align-items: center;
+    height: 80%;
+    width: 5rem;
+    width: calc(100vw - 2vw);
+    overflow: auto;
+}
+
+.sheet-folder {
+    height: 80%;
+    text-decoration: underline;
+    font-weight: bold;
+    text-decoration-thickness: 3px;
+    font-size: 1.2rem;
+    background-color: lightblue;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sheet-content {
+    width: 5rem;
+    /* background-color: lightgreen; */
+}

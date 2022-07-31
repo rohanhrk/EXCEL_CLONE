@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="./2_style.css">
+
+    <title>EXCEL SHEET</title>
+</head>
+
+<body>
+    <!-- ============================================= page action container ============================================= -->
+    <div class="page-actions-cont">
+        <div class="page-action">File</div>
+        <div class="page-action">Home</div>
+        <div class="page-action">Insert</div>
+        <div class="page-action">Layout</div>
+        <div class="page-action">Help</div>
+    </div>
+
+    <!-- ============================================= cell property container ============================================= -->
+    <div class="cellprops-actions-cont">
+        <!-- copy/cut/paste -->
+        <span class="material-icons copy">
+            content_copy
+        </span>
+        <span class="material-icons cut">
+            content_cut
+        </span>
+        <span class="material-icons paste">
+            content_paste
+        </span>
+        
+        <!-- font family -->
+        <select class="font-family-prop">
+            <option value="Arial" style="font-family: Arial, Helvetica, sans-serif;" selected>
+                Arial
+            </option>
+            <option value="Times New Roman" style="font-family: 'Times New Roman', Times, serif;">
+                Times New Roman
+            </option>
+            <option value="Arial Narrow"
+                style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
+                Arial Narrow
+            </option>
+            <option value="Courier New" style="font-family:'Courier New', Courier, monospace;">
+                Courier New
+            </option>
+            <option value="Verdana" style="font-family: Verdana, Geneva, Tahoma, sans-serif;">
+                Verdana
+            </option>
+            <option value="Georgia" style="font-family: Georgia, 'Times New Roman', Times, serif;">
+                Georgia
+            </option>
+            <option value="Palatino" style="font-family: Palatino;">
+                Palatino
+            </option>
+            <option value="Garamond" style="font-family: Garamond;">
+                Garamond
+            </option>
+            <option value="monospace" style="font-family:monospace">
+                monospace
+            </option>
+            <option value="cursive" style="font-family:cursive;">
+                cursive
+            </option>
+            <option value="Trebuchet MS"
+                style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">
+                Trebuchet MS
+            </option>
+            <option value="Arial Black" style="font-family: Arial Black;">
+                Arial Black
+            </option>
+            <option value="Impact" style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">
+                Impact
+            </option>
+            <option value="Comic Sans MS" style="font-size: Comic Sans MS;">
+                Comic Sans MS
+            </option>
+        </select>
+        <!-- font size -->
+        <select class="font-size-prop">
+            <option value="12">
+                12
+            </option>
+            <option value="14">
+                14
+            </option>
+            <option value="16" selected>
+                16
+            </option>
+            <option value="18">
+                18
+            </option>
+            <option value="20">
+                20
+            </option>
+            <option value="22">
+                22
+            </option>
+            <option value="24">
+                24
+            </option>
+            <option value="26">
+                26
+            </option>
+            <option value="28">
+                28
+            </option>
+            <option value="30">
+                30
+            </option>
+            <option value="32">
+                32
+            </option>
+        </select>
+        
+        <!-- bold/itelic/underline -->
+        <span class="material-icons bold">
+            format_bold
+        </span>
+        <span class="material-icons italic">
+            format_italic
+        </span>
+        <span class="material-icons underline">
+            format_underlined
+        </span>
+        <!-- alignment -->
+        <span class="left material-icons alignment">
+            format_align_left
+        </span>
+        <span class="center material-icons alignment">
+            format_align_center
+        </span>
+        <span class="right material-icons alignment">
+            format_align_right
+        </span>
+        <!-- text-color -->
+        <div class="color-prop">
+            <span class="material-icons">
+                format_color_text
+            </span>
+            <input type="color" class="font-color-prop">
+        </div>
+        <!-- background-color -->
+        <div class="color-prop">
+            <span class="material-icons">
+                format_color_fill
+            </span>
+            <input type="color" class="BGcolor-prop">
+        </div>
+    </div>
+
+    <!-- ============================================= formula action container ============================================= -->
+    <div class="formula-actions-cont">
+        <input type="text" readonly class="address-bar">
+        <img class="formula-icon" src="https://img.icons8.com/ios/50/000000/formula-fx.png" />
+        <input type="text" class="formula-bar">
+    </div>
+
+    <!-- ============================================= grid action container ============================================= -->
+    <div class="grid-actions-cont">
+        <div class="top-left-dummy-box"></div>
+        <div class="address-col-cont"></div>
+        <div class="cells-cont">
+            <div class="address-row-cont"></div>
+        </div>
+    </div>
+
+    <!-- ============================================= sheet actions container ============================================= -->
+    <div class="sheet-actions-cont">
+        <div class="sheet-add-icon">
+            <span class="material-icons">
+                post_add
+            </span>
+        </div>
+        <div class="sheets-folder-cont">
+        </div>
+    </div>
+
+
+    <script src="./3_grid_cont.js"></script>
+    <script src="./6_cycle-validation.js"></script>
+    <script src="./8_multiple-sheet.js"></script>
+    <script src="./4_cell-properties.js"></script>
+    <script src="./7_cycle-path-trace.js"></script>
+    <script src="./5_formula-evaluation.js"></script>
+    <script src="./9_cut-copy-paste.js"></script>
+</body>
+
+</html>
