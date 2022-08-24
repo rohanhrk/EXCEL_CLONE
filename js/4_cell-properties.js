@@ -5,7 +5,7 @@ let collectedSheetDB = []; // contains all the sheet DB
 let sheetDB = [];
 {
     let addBtn = document.querySelector(".sheet-add-icon");
-    addBtn.click(); 
+    addBtn.click();
 }
 
 
@@ -22,8 +22,10 @@ let leftAlign = alignment[0];
 let centerAlign = alignment[1];
 let rightAlign = alignment[2];
 
-let activeColorProp = "#d1d8e0";
-let inactiveColorProp = "#ecf0f1";
+let activeColorProp = "#ecf0f1";
+let activeFontColorProp = "#4CAF50";
+let inactiveColorProp = "#FAFAFA";
+let inactiveFontColorProp = "#212121";
 
 // application of two-way binding
 // Attache property listener
@@ -35,6 +37,7 @@ bold.addEventListener("click", (e) => {
     cellProp.bold = !cellProp.bold; // data change in storage
     cell.style.fontWeight = cellProp.bold ? "bold" : "normal"; // UI change(1)
     bold.style.backgroundColor = cellProp.bold ? activeColorProp : inactiveColorProp; // UI Change(2) 
+    bold.style.color = cellProp.bold ? activeFontColorProp : inactiveFontColorProp;
 })
 italic.addEventListener("click", (e) => {
     let address = addressBar.value;
@@ -44,6 +47,7 @@ italic.addEventListener("click", (e) => {
     cellProp.italic = !cellProp.italic; // Data change in storage
     cell.style.fontStyle = cellProp.italic ? "italic" : "normal"; // UI change (1)
     italic.style.backgroundColor = cellProp.italic ? activeColorProp : inactiveColorProp; // UI change (2)
+    italic.style.color = cellProp.italic ? activeFontColorProp : inactiveFontColorProp;
 })
 underline.addEventListener("click", (e) => {
     let address = addressBar.value;
@@ -53,6 +57,7 @@ underline.addEventListener("click", (e) => {
     cellProp.underline = !cellProp.underline; // Data change in storage
     cell.style.textDecoration = cellProp.underline ? "underline" : "none"; // UI change (1)
     underline.style.backgroundColor = cellProp.underline ? activeColorProp : inactiveColorProp; // UI change (2)
+    underline.style.color = cellProp.underline ? activeFontColorProp : inactiveFontColorProp;
 })
 fontSize.addEventListener("change", (e) => {
     let address = addressBar.value;
@@ -100,16 +105,30 @@ alignment.forEach((alignElem) => {
                 leftAlign.style.backgroundColor = activeColorProp;
                 centerAlign.style.backgroundColor = inactiveColorProp;
                 rightAlign.style.backgroundColor = inactiveColorProp;
+
+                leftAlign.style.color = activeFontColorProp;
+                centerAlign.style.color = inactiveFontColorProp;
+                rightAlign.style.color = inactiveFontColorProp;
                 break;
             case "center":
                 leftAlign.style.backgroundColor = inactiveColorProp;
                 centerAlign.style.backgroundColor = activeColorProp;
                 rightAlign.style.backgroundColor = inactiveColorProp;
+
+                leftAlign.style.color = inactiveFontColorProp;
+                centerAlign.style.color = activeFontColorProp;
+                rightAlign.style.color = inactiveFontColorProp;
                 break;
             case "right":
                 leftAlign.style.backgroundColor = inactiveColorProp;
                 centerAlign.style.backgroundColor = inactiveColorProp;
                 rightAlign.style.backgroundColor = activeColorProp;
+
+                leftAlign.style.color = inactiveFontColorProp;
+                centerAlign.style.color = inactiveFontColorProp;
+                rightAlign.style.color = activeFontColorProp;
+                break;
+            default:
                 break;
         }
     })
@@ -138,12 +157,16 @@ function addListenerToAttachCellProperties(cell) {
         cell.style.color = cellProp.fontColor;
         cell.style.backgroundColor = cellProp.BGcolor === "#000000" ? "transparent" : cellProp.BGcolor;
         cell.style.textAlign = cellProp.alignment;
-        
+
 
         // Apply properties UI Props container
         bold.style.backgroundColor = cellProp.bold ? activeColorProp : inactiveColorProp;
         italic.style.backgroundColor = cellProp.italic ? activeColorProp : inactiveColorProp;
         underline.style.backgroundColor = cellProp.underline ? activeColorProp : inactiveColorProp;
+        bold.style.color = cellProp.bold ? activeFontColorProp : inactiveFontColorProp;
+        italic.style.color = cellProp.italic ? activeFontColorProp : inactiveFontColorProp;
+        underline.style.color = cellProp.underline ? activeFontColorProp : inactiveFontColorProp;
+
         fontColor.value = cellProp.fontColor;
         BGcolor.value = cellProp.BGcolor;
         fontSize.value = cellProp.fontSize;
@@ -153,25 +176,42 @@ function addListenerToAttachCellProperties(cell) {
                 leftAlign.style.backgroundColor = activeColorProp;
                 centerAlign.style.backgroundColor = inactiveColorProp;
                 rightAlign.style.backgroundColor = inactiveColorProp;
+
+                leftAlign.style.color = activeFontColorProp;
+                centerAlign.style.color = inactiveFontColorProp;
+                rightAlign.style.color = inactiveFontColorProp;
                 break;
             case "center":
                 leftAlign.style.backgroundColor = inactiveColorProp;
                 centerAlign.style.backgroundColor = activeColorProp;
                 rightAlign.style.backgroundColor = inactiveColorProp;
+
+                leftAlign.style.color = inactiveFontColorProp;
+                centerAlign.style.color = activeFontColorProp;
+                rightAlign.style.color = inactiveFontColorProp;
                 break;
             case "right":
                 leftAlign.style.backgroundColor = inactiveColorProp;
                 centerAlign.style.backgroundColor = inactiveColorProp;
                 rightAlign.style.backgroundColor = activeColorProp;
+
+                leftAlign.style.color = inactiveFontColorProp;
+                centerAlign.style.color = inactiveFontColorProp;
+                rightAlign.style.color = activeFontColorProp;
+                break;
+
+            default:
                 break;
         }
 
-        // value
-        cell.innerText = cellProp.value;
+
 
         // formula
         let formula = document.querySelector(".formula-bar");
         formula.value = cellProp.formula;
+
+        // value
+        cell.innerText = cellProp.value;
 
     })
 }

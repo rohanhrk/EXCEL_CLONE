@@ -9,6 +9,18 @@ body {
     padding: 0;
 }
 
+/* Scroll Bar */
+::-webkit-scrollbar {
+    width: 5px;
+    height: 6px;
+    background: #EEEEEE;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #6A9A8B;
+    border-radius: 2px;
+}
+
 /* ===========================_Page action container_ ===========================*/
 .page-actions-cont {
     height: 3rem;
@@ -27,33 +39,87 @@ body {
     align-items: center;
 }
 
-
 /* ===========================_Cell properties action container_ ===========================*/
 .cellprops-actions-cont {
     height: 3rem;
-    background-color: #ecf0f1;
+
     display: flex;
     align-items: center;
 }
 
-.cellprops-actions-cont>* {
-    margin: 0.5rem;
-    display: inline-block;
+
+.copy-cut-paste-cont {
+    width: 7rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-right: 1px solid #B0BEC5;
 }
 
-.cellprops-actions-cont>select {
+.copy-cut-paste-cont>*:hover {
+    cursor: pointer;
+}
+.font-cont {
+    width: 14.5rem;
+    display: flex;
+    /* background-color: azure; */
+    border-right: 1px solid #B0BEC5;
+    justify-content: center;
+}
+.font-cont>*:hover {
+    cursor: pointer;
+}
+/* .cellprops-actions-cont>* {
+    margin: 0.5rem;
+} */
+
+/* .font-cont>select {
     border: none;
     outline: none;
-}
+} */
 
 .font-family-prop {
     padding: 0.2rem;
+    margin-right: 9px;
 }
 
 .font-size-prop {
     padding: 0.2rem;
 }
 
+.bold-italic-underline-cont {
+    width: 6rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-right: 1px solid #B0BEC5;
+}
+
+.bold-italic-underline-cont>*:hover {
+    cursor: pointer;
+}
+
+.alingment-cont {
+    width: 7rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-right: 1px solid #B0BEC5;
+}
+.alingment-cont>*:hover {
+    cursor: pointer;
+}
+
+.color-cont {
+    width: 5rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-right: 1px solid #B0BEC5;
+}
+.color-cont >*:hover {
+    cursor: pointer;
+}
 .color-prop {
     position: relative;
 }
@@ -66,6 +132,7 @@ body {
     height: 100%;
     width: 100%;
 }
+
 
 /* ===========================_formula action container_ ===========================*/
 .formula-actions-cont {
@@ -105,31 +172,22 @@ body {
     height: calc(100vh - 3rem - 3rem - 2rem - 3rem);
     position: relative;
     overflow: scroll;
-    background-color: #ecf0f1;
-}
-.grid-actions-cont::-webkit-scrollbar-thumb {
-        background-color: #7f8fa6;
-    border: 4px solid transparent;
-    border-radius: 8px;
-    background-clip: padding-box;
-    outline: 1px solid #7f8fa6 !important;
-}
-.grid-actions-cont::-webkit-scrollbar {
-    width: 16px;
-    border: 1px solid #afbac7;
+    /* background-color: #ecf0f1; */
 }
 
 .top-left-dummy-box {
-    height: 2rem;
+    height: 24px;
     width: 2.1rem;
-    background-color: #747d8c;
+    /* background-color: #ecf0f1; */
     position: fixed;
     z-index: 1;
+    border-right: 3px solid #015536;
+    border-bottom: 2px solid #015536;
 }
 
 .address-col-cont {
     position: sticky;
-    top: 2rem;
+    top: 24px;
     left: 0;
 }
 
@@ -148,7 +206,7 @@ body {
 }
 
 .address-col {
-    height: 2rem;
+    height: 23px;
     width: 2.1rem;
     display: flex;
     justify-content: center;
@@ -157,7 +215,7 @@ body {
 }
 
 .address-row {
-    height: 2rem;
+    height: 23px;
     width: 7rem;
     border: 1px solid #91a0b1;
     display: flex;
@@ -170,10 +228,10 @@ body {
 }
 
 .cell {
-    height: 2rem;
+    height: 23px;
     width: 7rem;
     outline: none;
-    border: 1px solid #afbac7;
+    border: 1px solid #B0BEC5;
 }
 
 
