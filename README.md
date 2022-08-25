@@ -41,6 +41,11 @@ It has multiple features of excel.
   <br/>
   👉 Save the excel file by downloading it to local device using 'SAVE' feature <br/>
   <br/>
+  
+ ## Address Bar and Formula Bar
+ <br/>
+ 
+ 
 
  
 
