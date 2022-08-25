@@ -11,12 +11,12 @@ live at https://rohanhrk.github.io/EXCEL_CLONE/
 It has multiple features of excel.
 ## Formating 
 ![Screenshot (261)](https://user-images.githubusercontent.com/72231697/186700537-648120da-9e58-405f-8802-1d9e4f6265a8.png)
-➡ Multiple formatting features to give the data looks you desire
-  👉 Font Style and Font Size 
-  👉 Alignment (left, centre, right)
-  👉 Bold, Italic, Underline
-  👉 Custom Background Color and Text Color
-  
+
+➡ Multiple formatting features to give the data looks you desire<br/>
+  👉 Font Style and Font Size <br/>
+  👉 Alignment (left, centre, right)<br/>
+  👉 Bold, Italic, Underline<br/>
+  👉 Custom Background Color and Text Color<br/>
  
 
 
