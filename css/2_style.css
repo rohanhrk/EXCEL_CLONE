@@ -27,6 +27,7 @@ body {
     background-color: #16a085;
     display: flex;
     align-items: flex-end;
+    padding-left: 1rem;
 }
 
 .page-action {
@@ -39,12 +40,18 @@ body {
     align-items: center;
 }
 
+.selected-page-action {
+    background-color: #f1f2f6;
+    color: #218c74;
+}
+
 /* ===========================_Cell properties action container_ ===========================*/
 .cellprops-actions-cont {
     height: 3rem;
-
     display: flex;
     align-items: center;
+    padding-left: 1rem;
+    border-bottom: 1px solid #B0BEC5;
 }
 
 
@@ -59,6 +66,7 @@ body {
 .copy-cut-paste-cont>*:hover {
     cursor: pointer;
 }
+
 .font-cont {
     width: 14.5rem;
     display: flex;
@@ -66,25 +74,33 @@ body {
     border-right: 1px solid #B0BEC5;
     justify-content: center;
 }
+
 .font-cont>*:hover {
     cursor: pointer;
 }
+
 /* .cellprops-actions-cont>* {
     margin: 0.5rem;
 } */
 
-/* .font-cont>select {
-    border: none;
+.font-cont>select {
+    /* border: none; */
     outline: none;
-} */
+    /* border-right: none; */
+    border-top: none;
+    border-bottom: none;
+    border-left: none;
+}
 
 .font-family-prop {
     padding: 0.2rem;
     margin-right: 9px;
+    border-right: 1px solid #B0BEC5;
 }
 
 .font-size-prop {
     padding: 0.2rem;
+    border-right: none;
 }
 
 .bold-italic-underline-cont {
@@ -106,6 +122,7 @@ body {
     align-items: center;
     border-right: 1px solid #B0BEC5;
 }
+
 .alingment-cont>*:hover {
     cursor: pointer;
 }
@@ -117,9 +134,11 @@ body {
     align-items: center;
     border-right: 1px solid #B0BEC5;
 }
-.color-cont >*:hover {
+
+.color-cont>*:hover {
     cursor: pointer;
 }
+
 .color-prop {
     position: relative;
 }
@@ -133,23 +152,35 @@ body {
     width: 100%;
 }
 
+.open-save-cont {
+    width: 5rem;
+    border-right: 1px solid #B0BEC5;
+    display: flex;
+    justify-content: space-around;
+}
 
 /* ===========================_formula action container_ ===========================*/
 .formula-actions-cont {
     height: 2rem;
-    background-color: #ecf0f1;
+    /* background-color: #ecf0f196; */
     padding-left: 1rem;
     display: flex;
     align-items: center;
-}
-
-.formula-actions-cont>* {
-    display: inline-block;
-    margin-right: 0.7rem;
+    border-bottom: 1px solid #B0BEC5;
 }
 
 .formula-icon {
-    width: 1.2rem;
+    height: 70%;
+    width: 3rem;
+    border-right: 1px solid #B0BEC5;
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+}
+
+.function {
+    color: #718794;
 }
 
 .address-bar {
@@ -159,30 +190,33 @@ body {
 
 .formula-bar {
     width: calc(100vw - 5rem - 0.7rem - 0.7rem - 0.7rem);
+    padding-left: 1rem;
 }
 
 .formula-actions-cont>input {
     border: none;
     outline: none;
     height: 70%;
+    border-right: 1px solid #B0BEC5;
 }
 
 /* ===========================_grid action container_ ===========================*/
 .grid-actions-cont {
-    height: calc(100vh - 3rem - 3rem - 2rem - 3rem);
+    height: calc(100vh - 3rem - 3rem - 2rem - 2rem);
     position: relative;
     overflow: scroll;
     /* background-color: #ecf0f1; */
 }
 
 .top-left-dummy-box {
-    height: 24px;
+    height: 23px;
     width: 2.1rem;
-    /* background-color: #ecf0f1; */
-    position: fixed;
+    background-color: #ecf0f1;
+    position: sticky;
     z-index: 1;
     border-right: 3px solid #015536;
     border-bottom: 2px solid #015536;
+    border-top: 1px solid #91a0b1;
 }
 
 .address-col-cont {
@@ -196,13 +230,14 @@ body {
     position: sticky;
     top: 0;
     left: 2rem;
+    background-color: #ecf0f196;
 }
 
 .cells-cont {
     position: absolute;
     top: 0;
     left: 2rem;
-    border: 1px solid #afbac7;
+    border-left: 1px solid #afbac7;
 }
 
 .address-col {
@@ -211,13 +246,14 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid #91a0b1;
+    border-bottom: 1px solid #91a0b1;
 }
 
 .address-row {
     height: 23px;
     width: 7rem;
-    border: 1px solid #91a0b1;
+    border-right: 1px solid #91a0b1;
+    border-bottom: 1px solid #91a0b1;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -227,24 +263,29 @@ body {
     display: flex;
 }
 
+
 .cell {
     height: 23px;
     width: 7rem;
     outline: none;
-    border: 1px solid #B0BEC5;
+    border-right: 1px solid #B0BEC5;
+    border-bottom: 1px solid #B0BEC5;
 }
 
 
 
 /* ===========================_sheet action container_ ===========================*/
 .sheet-actions-cont {
-    height: 3rem;
+    height: 2rem;
     display: flex;
     align-items: center;
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
-    gap: 1rem;
     background-color: #ecf0f1;
+}
+
+.dummy {
+    width: 2.1rem;
+    /* border: 1px solid; */
+    height: 100%;
 }
 
 .sheet-actions-cont>* {
@@ -252,7 +293,16 @@ body {
 }
 
 .sheet-add-icon {
-    width: 2vw;
+    height: 100%;
+    width: 5rem;
+    border-right: 1px solid #91a0b1;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.sheet-add-icon>* {
+    color: #718794;
 }
 
 .sheet-add-icon:hover {
@@ -262,23 +312,24 @@ body {
 .sheets-folder-cont {
     display: flex;
     align-items: center;
-    height: 80%;
+    height: 100%;
     width: 5rem;
     width: calc(100vw - 2vw);
     overflow: auto;
 }
 
 .sheet-folder {
-    height: 80%;
-    text-decoration: underline;
-    font-weight: bold;
-    text-decoration-thickness: 3px;
-    font-size: 1.2rem;
-    background-color: lightblue;
+    height: 100%;
+    /* text-decoration: underline; */
+    /* font-weight: bold; */
+    /* text-decoration-thickness: 3px; */
+    font-size: larger;
+    /* background-color: lightblue; */
     text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
+    color: #4b4949c2;
 }
 
 .sheet-content {

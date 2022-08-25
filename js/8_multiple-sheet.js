@@ -3,7 +3,7 @@ let sheetFolderCont = document.querySelector(".sheets-folder-cont");
 addBtn.addEventListener("click", (e) => {
     let sheet = document.createElement("div");
     sheet.setAttribute("class", "sheet-folder");
-
+    sheet.style.borderRight = '1px solid #B0BEC5';
     let allSheetFolders = document.querySelectorAll(".sheet-folder");
     sheet.setAttribute("id", allSheetFolders.length);
     sheet.innerHTML = `
@@ -85,9 +85,12 @@ function handleSheetUI(sheet) {
     let allSheetFolders = document.querySelectorAll(".sheet-folder");
     for (let i = 0; i < allSheetFolders.length; i++) {
         allSheetFolders[i].style.backgroundColor = "transparent";
+        allSheetFolders[i].style.boxShadow = 'none';
     }
-    sheet.style.backgroundColor = "#bdc3c7";
-    sheet.style.borderRadius = "5px";
+    sheet.style.backgroundColor = "#FAFAFA";
+    sheet.style.boxShadow = "#80808082 -1px 0px 5px 1px";
+    // background-color: #FAFAFA;
+    // sheet.style.borderRadius = "5px";
 }
 function handleActiveSheet(sheet) {
     sheet.addEventListener("click", (e) => {
@@ -106,12 +109,12 @@ function handleActiveSheet(sheet) {
 
 function handleSheetRemovalUI(sheet) {
     sheet.remove();
-  
+
     let allSheetFolders = document.querySelectorAll(".sheet-folder");
-    for (let i = 0;i < allSheetFolders.length;i++) {
+    for (let i = 0; i < allSheetFolders.length; i++) {
         allSheetFolders[i].setAttribute("id", i);
         let sheetContent = allSheetFolders[i].querySelector(".sheet-content");
-        sheetContent.innerText = `Sheet ${i+1}`;
+        sheetContent.innerText = `Sheet ${i + 1}`;
         allSheetFolders[i].style.backgroundColor = "transparent";
     }
 
@@ -130,7 +133,7 @@ function handleSheetRemove(sheet) {
         }
 
         let response = confirm("sheet will be permanently remove from data base, are you sure to remove???");
-        if(response === false) return;
+        if (response === false) return;
 
         // DB
         let sheetIdx = Number(sheet.getAttribute("id"));

@@ -1,5 +1,3 @@
-"Use Strick";
-
 // Storage
 let collectedSheetDB = []; // contains all the sheet DB
 let sheetDB = [];
