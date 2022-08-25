@@ -209,7 +209,7 @@ function addListenerToAttachCellProperties(cell) {
         formula.value = cellProp.formula;
 
         // value
-        cell.innerText = cellProp.value;
+        cell.value = cellProp.value;
 
     })
 }

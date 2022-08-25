@@ -25,16 +25,24 @@ for(let r = 0; r < rows; r++) {
     rowCont.setAttribute("class", "row-cont"); 
     for(let c = 0; c < cols; c++) {
         let cell = document.createElement("div");
-        cell.setAttribute("class", "cell");
+        cell.setAttribute("class", "cell1");
         cell.setAttribute("contenteditable", "true");
         cell.setAttribute("spellcheck", "false");
         
+
+        // create input tag
+        let input = document.createElement("input");
+        input.setAttribute("class", "cell");
+        input.setAttribute("type", "text");
+
+
         // Atributes for cell and storage identification
-        cell.setAttribute("rid", r)
-        cell.setAttribute("cid", c)
-        
+        input.setAttribute("rid", r)
+        input.setAttribute("cid", c)
+        cell.appendChild(input);
+
         rowCont.appendChild(cell);
-        addListenerForAddressBarDisplay(cell, r, c);
+        addListenerForAddressBarDisplay(input, r, c);
     }
     cellsCont.appendChild(rowCont);
 }

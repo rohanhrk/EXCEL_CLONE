@@ -5,7 +5,7 @@ for(let i = 0; i < rows; i++) {
         cell.addEventListener("blur", (e) => {
             let address = addressBar.value; // get address name 
             let [cell, cellProp] = getCellAndCellProp(address); // get cell and sheetDB access
-            let enteredData = cell.innerText; // UI Change(cell)
+            let enteredData = cell.value; // UI Change(cell)
 
             // case 2 / case 3(a) 
             // => if value changed, break Parent-child relationship 
@@ -108,6 +108,7 @@ function removeEdgeFromGraph(formula) {
         }
     })
 }
+
 function removeChildFromParent(childAddress) {
     let [childCell, childCellProp] = getCellAndCellProp(childAddress);
     let formula = childCellProp.formula;// get formula from children DB
@@ -184,7 +185,7 @@ function setCellUIAndCellProp(evaluatedValue, formula) {
     let [cell, cellProp] = getCellAndCellProp(address); // get cell and sheetDB access
 
     // UI update
-    cell.innerText = evaluatedValue; // set value
+    cell.value = evaluatedValue; // set value
 
     // DB update
     cellProp.value = evaluatedValue; // set value

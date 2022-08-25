@@ -264,12 +264,19 @@ body {
 }
 
 
-.cell {
+.cell1 {
     height: 23px;
     width: 7rem;
     outline: none;
     border-right: 1px solid #B0BEC5;
     border-bottom: 1px solid #B0BEC5;
+}
+
+.cell {
+    height: 100%;
+    width: 100%;
+    border: none;
+    outline: none;
 }
 
 

@@ -209,5 +209,7 @@ paste.addEventListener("click", (e) => {
             cell.click();
         }
     }
+
+    // innerText
 })
 
