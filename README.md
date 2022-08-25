@@ -23,13 +23,13 @@ It has multiple features of excel.
 <br/>
 ➡ Multiple formatting features to give the data looks you desire<br/>
 <br/>
-  &nbsp 👉 Font Style and Font Size <br/>
+  👉 Font Style and Font Size <br/>
   <br/>
-  &nbsp 👉 Alignment (left, centre, right)<br/>
+  👉 Alignment (left, centre, right)<br/>
   <br/>
-  &nbsp 👉 Bold, Italic, Underline<br/>
+  👉 Bold, Italic, Underline<br/>
   <br/>
-  &nbsp 👉 Custom Background Color and Text Color<br/>
+  👉 Custom Background Color and Text Color<br/>
   <br/>
   
  ## New Open Save
@@ -37,11 +37,11 @@ It has multiple features of excel.
 <br/>
 ➡ New, Opne, Save feature provide us with three important feature which alllow the user to <br/>
 <br/>
-  &nbsp 👉 Create a new excel file using the 'NEW ' feature <br/>
+  👉 Create a new excel file using the 'NEW ' feature <br/>
   <br/>
-  &nbsp 👉 Open an already downloaded file from local devie using 'OPEN' feature <br/>
+  👉 Open an already downloaded file from local devie using 'OPEN' feature <br/>
   <br/>
-  &nbsp 👉 Save the excel file by downloading it to local device using 'SAVE' feature <br/>
+  👉 Save the excel file by downloading it to local device using 'SAVE' feature <br/>
   <br/>
   
  ## Address Bar and Formula Bar
@@ -49,16 +49,16 @@ It has multiple features of excel.
 
  <br/>
  ➡ Address Bar and Formula Bar are added in this clone to provide better functionality and user experience. <br/>
- &nbsp 👉 Address bar provides the user the address of the cell on which user is currently working on.
+  👉 Address bar provides the user the address of the cell on which user is currently working on.
  <br/> 
  <br/>
- &nbsp 👉 Formula Bar provides the user access to evaluate ALL BASIC MATHEMATICAL operations on one or more cells.
+  👉 Formula Bar provides the user access to evaluate ALL BASIC MATHEMATICAL operations on one or more cells.
  
 ## Sheets
 ![Screenshot (280)](https://user-images.githubusercontent.com/72231697/186745971-1160bad0-804a-43b9-a7f9-a83ac29d5b85.png)
 <br/>
-&nbsp<br/> 👉 User can use n numbers of unique sheets in a single Excel page. <br/>
-&nbsp<br/> 👉 Each sheet will act as a complete new sheet, and whole excel page can be saved and accessed together.
+  👉 User can use n numbers of unique sheets in a single Excel page. <br/>
+  👉 Each sheet will act as a complete new sheet, and whole excel page can be saved and accessed together.
 
  
  
