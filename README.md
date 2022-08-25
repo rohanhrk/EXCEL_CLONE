@@ -23,9 +23,9 @@ It has multiple features of excel.
 <br/>
 ➡ Multiple formatting features to give the data looks you desire<br/>
 <br/>
-  👉 Font Style and Font Size <br/>
+  &ensp 👉 Font Style and Font Size <br/>
   <br/>
-  👉 Alignment (left, centre, right)<br/>
+  &ensp 👉 Alignment (left, centre, right)<br/>
   <br/>
   👉 Bold, Italic, Underline<br/>
   <br/>
