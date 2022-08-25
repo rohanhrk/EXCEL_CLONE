@@ -23,13 +23,13 @@ It has multiple features of excel.
 <br/>
 ➡ Multiple formatting features to give the data looks you desire<br/>
 <br/>
-  👉 Font Style and Font Size <br/>
+  &nbsp 👉 Font Style and Font Size <br/>
   <br/>
-  👉 Alignment (left, centre, right)<br/>
+  &nbsp 👉 Alignment (left, centre, right)<br/>
   <br/>
-  👉 Bold, Italic, Underline<br/>
+  &nbsp 👉 Bold, Italic, Underline<br/>
   <br/>
-  👉 Custom Background Color and Text Color<br/>
+  &nbsp 👉 Custom Background Color and Text Color<br/>
   <br/>
   
  ## New Open Save
@@ -37,27 +37,28 @@ It has multiple features of excel.
 <br/>
 ➡ New, Opne, Save feature provide us with three important feature which alllow the user to <br/>
 <br/>
-  &nbsp;👉 Create a new excel file using the 'NEW ' feature <br/>
+  &nbsp 👉 Create a new excel file using the 'NEW ' feature <br/>
   <br/>
-  👉 Open an already downloaded file from local devie using 'OPEN' feature <br/>
+  &nbsp 👉 Open an already downloaded file from local devie using 'OPEN' feature <br/>
   <br/>
-  👉 Save the excel file by downloading it to local device using 'SAVE' feature <br/>
+  &nbsp 👉 Save the excel file by downloading it to local device using 'SAVE' feature <br/>
   <br/>
   
  ## Address Bar and Formula Bar
- ![Screenshot (278)](https://user-images.githubusercontent.com/72231697/186730856-c3c71118-9ccb-4193-b477-6b2618d7bcfd.png)
+ ![bar](https://user-images.githubusercontent.com/72231697/186749035-1526e133-9a5e-40ee-8dc1-bd95aecefcea.png)
+
  <br/>
  ➡ Address Bar and Formula Bar are added in this clone to provide better functionality and user experience. <br/>
- 👉 Address bar provides the user the address of the cell on which user is currently working on.
+ &nbsp 👉 Address bar provides the user the address of the cell on which user is currently working on.
  <br/> 
  <br/>
- 👉 Formula Bar provides the user access to evaluate ALL BASIC MATHEMATICAL operations on one or more cells.
+ &nbsp 👉 Formula Bar provides the user access to evaluate ALL BASIC MATHEMATICAL operations on one or more cells.
  
 ## Sheets
 ![Screenshot (280)](https://user-images.githubusercontent.com/72231697/186745971-1160bad0-804a-43b9-a7f9-a83ac29d5b85.png)
 <br/>
-  👉 User can use n numbers of unique sheets in a single Excel page. <br/>
-  👉 Each sheet will act as a complete new sheet, and whole excel page can be saved and accessed together.
+&nbsp 👉 User can use n numbers of unique sheets in a single Excel page. <br/>
+&nbsp 👉 Each sheet will act as a complete new sheet, and whole excel page can be saved and accessed together.
 
  
  
