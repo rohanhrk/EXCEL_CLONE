@@ -49,6 +49,7 @@ It has multiple features of excel.
 
  <br/>
  ➡ Address Bar and Formula Bar are added in this clone to provide better functionality and user experience. <br/>
+ <br/>
   👉 Address bar provides the user the address of the cell on which user is currently working on.
  <br/> 
  <br/>
