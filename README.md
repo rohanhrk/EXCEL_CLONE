@@ -1,5 +1,7 @@
 # EXCEL CLONE
 
+![sheet](https://user-images.githubusercontent.com/72231697/186729173-966721c0-2114-4843-9fb4-18835651e756.png)
+<br/>
 live at https://rohanhrk.github.io/EXCEL_CLONE/
 
 # DESCRIPTION
