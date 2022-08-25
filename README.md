@@ -17,6 +17,15 @@ It has multiple features of excel.
   👉 Alignment (left, centre, right)<br/>
   👉 Bold, Italic, Underline<br/>
   👉 Custom Background Color and Text Color<br/>
+  
+ ## New Open Save
+![Screenshot (265)](https://user-images.githubusercontent.com/72231697/186702174-1f0f7bd2-a8ef-4245-aa57-c3b7e1d5e59a.png)
+
+➡ New, Opne, Save feature provide us with three important feature which alllow the user to
+  👉 Create a new excel file using the 'NEW ' feature <br/>
+  👉 Open an already downloaded file from local devie using 'OPEN' feature <br/>
+  👉 Save the excel file by downloading it to local device using 'SAVE' feature <br/>
+
  
 
 
