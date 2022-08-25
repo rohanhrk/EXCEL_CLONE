@@ -23,9 +23,9 @@ It has multiple features of excel.
 <br/>
 ➡ Multiple formatting features to give the data looks you desire<br/>
 <br/>
-  &ensp 👉 Font Style and Font Size <br/>
+  👉 Font Style and Font Size <br/>
   <br/>
-  &ensp 👉 Alignment (left, centre, right)<br/>
+  👉 Alignment (left, centre, right)<br/>
   <br/>
   👉 Bold, Italic, Underline<br/>
   <br/>
@@ -37,7 +37,7 @@ It has multiple features of excel.
 <br/>
 ➡ New, Opne, Save feature provide us with three important feature which alllow the user to <br/>
 <br/>
-  👉 Create a new excel file using the 'NEW ' feature <br/>
+  &nbsp;👉 Create a new excel file using the 'NEW ' feature <br/>
   <br/>
   👉 Open an already downloaded file from local devie using 'OPEN' feature <br/>
   <br/>
