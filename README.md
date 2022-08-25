@@ -57,8 +57,8 @@ It has multiple features of excel.
 ## Sheets
 ![Screenshot (280)](https://user-images.githubusercontent.com/72231697/186745971-1160bad0-804a-43b9-a7f9-a83ac29d5b85.png)
 <br/>
-&nbsp 👉 User can use n numbers of unique sheets in a single Excel page. <br/>
-&nbsp 👉 Each sheet will act as a complete new sheet, and whole excel page can be saved and accessed together.
+&nbsp<br/> 👉 User can use n numbers of unique sheets in a single Excel page. <br/>
+&nbsp<br/> 👉 Each sheet will act as a complete new sheet, and whole excel page can be saved and accessed together.
 
  
  
