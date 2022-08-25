@@ -45,7 +45,6 @@ It has multiple features of excel.
   <br/>
   
  ## Address Bar and Formula Bar
- <br/>
  ![Screenshot (278)](https://user-images.githubusercontent.com/72231697/186730856-c3c71118-9ccb-4193-b477-6b2618d7bcfd.png)
  <br/>
  ➡ Address Bar and Formula Bar are added in this clone to provide better functionality and user experience. <br/>
