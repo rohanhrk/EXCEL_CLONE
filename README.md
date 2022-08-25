@@ -46,6 +46,20 @@ It has multiple features of excel.
   
  ## Address Bar and Formula Bar
  <br/>
+ ![Screenshot (278)](https://user-images.githubusercontent.com/72231697/186730856-c3c71118-9ccb-4193-b477-6b2618d7bcfd.png)
+ <br/>
+ ➡ Address Bar and Formula Bar are added in this clone to provide better functionality and user experience. <br/>
+ 👉 Address bar provides the user the address of the cell on which user is currently working on.
+ <br/> 
+ <br/>
+ 👉 Formula Bar provides the user access to evaluate ALL BASIC MATHEMATICAL operations on one or more cells.
+ 
+## Sheets
+![Screenshot (280)](https://user-images.githubusercontent.com/72231697/186745971-1160bad0-804a-43b9-a7f9-a83ac29d5b85.png)
+<br/>
+  👉 User can use n numbers of unique sheets in a single Excel page.
+  👉 Each sheet will act as a complete new sheet, and whole excel page can be saved and accessed together.
+
  
  
 
