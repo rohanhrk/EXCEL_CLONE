@@ -153,7 +153,7 @@ body {
 }
 
 .open-save-cont {
-    width: 5rem;
+    width: 7rem;
     border-right: 1px solid #B0BEC5;
     display: flex;
     justify-content: space-around;
@@ -343,3 +343,75 @@ body {
     width: 5rem;
     /* background-color: lightgreen; */
 }
+
+/* responsive */
+@media screen and (min-width : 0px) and (max-width: 376px) {
+    .page-actions-cont {
+        display: none;
+    }
+
+    .cellprops-actions-cont {
+        display: none;
+    }
+
+    .grid-actions-cont {
+        height: calc(100vh - 2rem - 2rem);
+    }
+
+    .address-row-cont, .address-col, .top-left-dummy-box, .formula-actions-cont, .address-bar, .formula-bar  {
+        background-color: black;
+        color: white;
+    }
+
+    .sheet-actions-cont {
+        background-color: black;
+    }
+}
+
+@media screen and (min-width : 376px) and (max-width: 426px) {
+    .page-actions-cont {
+        display: none;
+    }
+
+    .cellprops-actions-cont {
+        display: none;
+    }
+
+    .grid-actions-cont {
+        height: calc(100vh - 2rem - 2rem);
+    }
+
+    .address-row-cont, .address-col, .top-left-dummy-box, .formula-actions-cont, .address-bar, .formula-bar  {
+        background-color: black;
+        color: white;
+    }
+
+    .sheet-actions-cont {
+        background-color: black;
+    }
+}
+
+@media screen and (min-width: 426px) and (max-width: 768px) {
+    .page-actions-cont {
+        display: none;
+    }
+
+    .cellprops-actions-cont {
+        display: none;
+    }
+
+    .grid-actions-cont {
+        height: calc(100vh - 2rem - 2rem);
+    }
+
+    .address-row-cont, .address-col, .top-left-dummy-box, .formula-actions-cont, .address-bar, .formula-bar  {
+        background-color: black;
+        color: white;
+    }
+
+    .sheet-actions-cont {
+        background-color: black;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {}
