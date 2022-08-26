@@ -1,3 +1,4 @@
+
 // listener to all cell to set value
 for(let i = 0; i < rows; i++) {
     for(let j = 0; j < cols; j++) {
@@ -158,7 +159,7 @@ function evaluateFormula(formula) {
 
     // ["(", "10", "+", "10", ")"]
     let newFormula = formulaArr.join(" "); // ( 10 + 10 )
-    return eval(newFormula); // 20
+    return infixEvaluation(newFormula); // 20
 }
 
 function getValue(elem) {
