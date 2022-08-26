@@ -27,20 +27,20 @@
     <div class="cellprops-actions-cont">
         <!-- copy/cut/paste -->
         <div class="copy-cut-paste-cont">
-            <span class="material-icons copy">
+            <span class="material-icons copy" title="copy">
                 content_copy
             </span>
-            <span class="material-icons cut">
+            <span class="material-icons cut" title="cut">
                 content_cut
             </span>
-            <span class="material-icons paste">
+            <span class="material-icons paste" title="paste">
                 content_paste
             </span>
         </div>
 
         <div class="font-cont">
             <!-- font family -->
-            <select class="font-family-prop">
+            <select class="font-family-prop" title="font family">
                 <option value="Arial" style="font-family: Arial, Helvetica, sans-serif;" selected>
                     Arial
                 </option>
@@ -87,7 +87,7 @@
                 </option>
             </select>
             <!-- font size -->
-            <select class="font-size-prop">
+            <select class="font-size-prop" title="font size">
                 <option value="12">
                     12
                 </option>
@@ -126,26 +126,26 @@
 
         <div class="bold-italic-underline-cont">
             <!-- bold/itelic/underline -->
-            <span class="material-icons bold">
+            <span class="material-icons bold" title="bold">
                 format_bold
             </span>
-            <span class="material-icons italic">
+            <span class="material-icons italic" title="italic">
                 format_italic
             </span>
-            <span class="material-icons underline">
+            <span class="material-icons underline" title="underlined">
                 format_underlined
             </span>
         </div>
 
         <div class="alingment-cont">
             <!-- alignment -->
-            <span class="left material-icons alignment">
+            <span class="left material-icons alignment" title="horizontal left">
                 format_align_left
             </span>
-            <span class="center material-icons alignment">
+            <span class="center material-icons alignment" title="horizontal center">
                 format_align_center
             </span>
-            <span class="right material-icons alignment">
+            <span class="right material-icons alignment" title="horizontal right">
                 format_align_right
             </span>
         </div>
@@ -156,38 +156,38 @@
                 <span class="material-icons">
                     format_color_text
                 </span>
-                <input type="color" class="font-color-prop">
+                <input type="color" class="font-color-prop" title="text color">
             </div>
             <!-- background-color -->
             <div class="color-prop">
                 <span class="material-icons">
                     format_color_fill
                 </span>
-                <input type="color" class="BGcolor-prop">
+                <input type="color" class="BGcolor-prop" title="backgrond color">
             </div>
         </div>
         <div class="open-save-cont">
-            <span class="material-icons new">
+            <span class="material-icons new" title="new">
                 open_in_new
             </span>
-            <span class="material-icons open">
+            <span class="material-icons open" title="open">
                 open_in_browser
             </span>
-            <span class="material-icons download">
+            <span class="material-icons download" title="download">
                 file_download
             </span>
         </div>
     </div>
 
     <!-- ============================================= formula action container ============================================= -->
-    <div class="formula-actions-cont">
-        <input type="text" readonly class="address-bar">
+    <div class="formula-actions-cont" >
+        <input type="text" readonly class="address-bar" title="address bar">
         <div class="formula-icon">
             <span class="material-icons function">
                 functions
             </span>
         </div>
-        <input type="text" class="formula-bar" placeholder="Enter text or formula here">
+        <input type="text" class="formula-bar" placeholder="Enter text or formula here" spellcheck="false">
     </div>
 
     <!-- ============================================= grid action container ============================================= -->

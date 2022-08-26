@@ -63,6 +63,7 @@ body {
     border-right: 1px solid #B0BEC5;
 }
 
+
 .copy-cut-paste-cont>*:hover {
     cursor: pointer;
 }
