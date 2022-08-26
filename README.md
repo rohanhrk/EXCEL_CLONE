@@ -63,6 +63,12 @@ It has multiple features of excel.
       👉 User can use n numbers of unique sheets in a single Excel page. <br/>
       👉 Each sheet will act as a complete new sheet, and whole excel page can be saved and accessed together.
 
+# STACK USED
+👉 HTML <br/>
+👉 CSS <br/>
+👉 JavaScript <br/>
+👉 DOM <br/>
+
  
  
 
