@@ -1,4 +1,3 @@
-
 // listener to all cell to set value
 for(let i = 0; i < rows; i++) {
     for(let j = 0; j < cols; j++) {
@@ -7,7 +6,7 @@ for(let i = 0; i < rows; i++) {
             let address = addressBar.value; // get address name 
             let [cell, cellProp] = getCellAndCellProp(address); // get cell and sheetDB access
             let enteredData = cell.value; // UI Change(cell)
-
+            
             // case 2 / case 3(a) 
             // => if value changed, break Parent-child relationship 
             // and update value in children cell also
@@ -135,7 +134,7 @@ function updateChildrenCell(parentAddress) {
         let evaluateValue = evaluateFormula(childCellProp.formula); // re evaluate formlua
 
         // to update UI and DB
-        childCell.innerText = evaluateValue; // UI update
+        childCell.value = evaluateValue; // UI update
 
         childCellProp.value = evaluateValue; // DB update
 
