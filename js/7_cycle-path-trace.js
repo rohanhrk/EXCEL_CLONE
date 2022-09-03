@@ -45,7 +45,14 @@ async function cyclePathTrace_dfs(graph, sr, sc, vis, path) {
         let [nbr_row, nbr_col] = graph[sr][sc][childIdx];
         
         if(vis[nbr_row][nbr_col] === false) {
-            isCyclceDetect = isCyclceDetect || await cyclePathTrace_dfs(graph, nbr_row, nbr_col, vis, path);
+            // isCyclceDetect = isCyclceDetect || await cyclePathTrace_dfs(graph, nbr_row, nbr_col, vis, path);
+            let response = await cyclePathTrace_dfs(graph, nbr_row, nbr_col, vis, path);
+            if(response == true) {
+                cell.style.backgroundColor = "transparent";
+                await colorDelay(); // delay for 1sec
+
+                return Promise.resolve(true);
+            } 
         } else if(vis[nbr_row][nbr_col] === true && path[nbr_row][nbr_col] === true) {
             let cyclicCell = document.querySelector(`.cell[rid="${nbr_row}"][cid="${nbr_col}"]`);
             cyclicCell.style.backgroundColor = "pink";
