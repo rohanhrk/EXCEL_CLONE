@@ -22,7 +22,7 @@ It has multiple features of excel.
 ## Formating 
 ![Screenshot (261)](https://user-images.githubusercontent.com/72231697/186700537-648120da-9e58-405f-8802-1d9e4f6265a8.png)
 <br/>
-➡ It provides basic formaling like <br/>
+➡ It provides basic formating like <br/>
 <br/>
         👉 Font Style and Font Size <br/>
         <br/>
